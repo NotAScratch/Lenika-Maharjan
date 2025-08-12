@@ -1,0 +1,3 @@
+<!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
+
+This project is a creative portfolio website for Lenika Maharjan, a Motion Graphic Artist, 2D & 3D Artist, Video Editor, Graphic Designer, and Visual Storytelling Enthusiast. Use modern, interactive, and visually engaging design patterns. Prioritize creative use of animation (Framer Motion), responsive layouts (Tailwind CSS), and clear section structure: Home, About, Portfolio (2D, 3D, Motion Graphics, Video Editing), Services, Testimonials, and Contact. Prepare for static hosting on Azure Static Web Apps or GitHub Pages.
