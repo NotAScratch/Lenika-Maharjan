@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+
+import BottomBar from "../components/BottomBar";
 import ClientLayoutWrapper from "../components/ClientLayoutWrapper";
 
 
@@ -10,7 +12,7 @@ export const metadata: Metadata = {
   description: "A creative, interactive portfolio for Lenika Maharjan.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-background text-foreground min-h-screen flex flex-col">
@@ -24,4 +26,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-import BottomBar from "../components/BottomBar";
+
