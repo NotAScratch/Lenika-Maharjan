@@ -36,7 +36,7 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7, duration: 1 }}
           >
-            From your boyfriend: Wishing you a magical year ahead, filled with love, creativity, and endless joy. You inspire me every day, and I hope this portfolio brings a smile to your face. 💖
+            From your Samir: Wishing you a magical year ahead, filled with love, creativity, and endless joy. You inspire me every day, and I hope this portfolio brings a smile to your face. 💖
           </motion.div>
           <motion.div
             className="flex justify-center items-center mb-6"
