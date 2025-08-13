@@ -23,28 +23,43 @@ export default function LoadingScreen({ onFinish }: { onFinish: () => void }) {
           transition={{ duration: 1 }}
         >
           <motion.div
-            className="text-5xl font-extrabold text-[#FFD700] mb-4 tracking-tight"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1 }}
+            className="text-5xl md:text-6xl font-extrabold text-pink-400 mb-4 tracking-tight drop-shadow-lg"
+            initial={{ scale: 0.7, opacity: 0 }}
+            animate={{ scale: [1, 1.1, 1], opacity: 1 }}
+            transition={{ duration: 1.2, type: 'spring' }}
           >
-            Lenika Maharjan
+            Happy Birthday, Lenika! 🎂
           </motion.div>
           <motion.div
-            className="w-16 h-16 rounded-full border-4 border-[#FFD700] flex items-center justify-center mb-6"
-            initial={{ scale: 0.7 }}
-            animate={{ scale: [1, 1.1, 1] }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
+            className="text-2xl md:text-3xl font-semibold text-white mb-2 text-center px-4"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 1 }}
           >
-            <span className="text-3xl text-[#FFD700] font-bold">�</span>
+            From your boyfriend: Wishing you a magical year ahead, filled with love, creativity, and endless joy. You inspire me every day, and I hope this portfolio brings a smile to your face. 💖
           </motion.div>
           <motion.div
-            className="text-lg text-[#FFD700] font-semibold tracking-wide"
+            className="flex justify-center items-center mb-6"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: [1, 1.15, 1] }}
+            transition={{ delay: 1.2, duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
+          >
+            <motion.div
+              className="w-20 h-20 rounded-full bg-gradient-to-tr from-pink-400 via-yellow-300 to-purple-400 flex items-center justify-center shadow-xl border-4 border-white"
+              initial={{ rotate: 0 }}
+              animate={{ rotate: [0, 10, -10, 0] }}
+              transition={{ duration: 2, repeat: Infinity, repeatType: "reverse" }}
+            >
+              <span className="text-4xl">🎉</span>
+            </motion.div>
+          </motion.div>
+          <motion.div
+            className="text-lg text-yellow-300 font-semibold tracking-wide mt-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 1.5 }}
           >
-            Loading your experience...
+            Loading your birthday experience...
           </motion.div>
         </motion.div>
       )}
